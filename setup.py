@@ -97,6 +97,8 @@ setup(
     python_requires=">=3.6",
     classifiers=classifiers,
     ext_modules=[mod_spt],
+    package_data={"setproctitle-stubs": ["__init__.pyi"]},
+    packages=["setproctitle-stubs"],
     extras_require={"test": ["pytest"]},
     **kwargs
 )
